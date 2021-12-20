@@ -8,6 +8,7 @@ class Point:
         self.__x = x
         self.__y = y
 
+
     @property
     def x(self):
         return self.__x
