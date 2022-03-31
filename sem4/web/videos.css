@@ -1,0 +1,123 @@
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 24pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+}
+
+.header-block{
+    text-align: right;
+    height: 70px;
+
+}
+.head-button a{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 16pt;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.head-button{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+.about-body{display: flex;}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30pt;
+    text-align: center;
+}
+.p-wrapper{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25pt;
+    text-indent: 20px
+}
+#gViDoN_iMg{
+    max-width: 30%;
+    height: auto;
+    float:right;
+    margin-right: 20px;
+}
+
+.videos iframe{
+    position: absolute;
+    margin: auto;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.paintings figure{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#last {
+    width: 60%;
+    height: auto;
+}
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width:100%;
+    background-image: url("images/4056c6748fb8c462496efcd4f5118527 (1).jpg");
+
+    background-size: 100%;
+}
+body,html{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+
+    display: inline-block;
+
+
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color:  #0984e3;
+    min-width: 160px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 13px;
+
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #006687;}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {background-color: #e6e6e6;}

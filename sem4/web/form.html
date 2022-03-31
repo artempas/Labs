@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>Опрос</title>
+</head>
+<body>
+<header>
+    <a href="index.html" id="logo">Мастерская Гвидона Вишневского</a>
+    <div class="header-block">
+        <ul class="head-buttons">
+            <li class="head-button"><a href="index.html">Главная</a></li>
+            <li class="head-button">
+                <div class="dropdown">
+                    <div>
+                        <a class="dropbtn" href="paintings.html">Работы</a>
+                        <div class="dropdown-content">
+                            <a href="paintings.html#1">Утро в сосновом бору</a>
+                            <a href="paintings.html#2">Подсолнухи</a>
+                            <a href="paintings.html#3">Три медведя</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="head-button"><a href="videos.html">Видео</a></li>
+            <li class="head-button"><a href="form.html">Опрос</a></li>
+        </ul>
+
+    </div>
+</header>
+<div class="form">
+    <h2 id="high">Оцените творчество Гвидона Вишневского</h2>
+    <form class="form-itself" align="center" id="form">
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="10" class="slider" id="myRange"
+                   oninput="this.nextElementSibling.value = this.value">
+            <output id="val">10</output>
+        </div>
+        <label for="myRange">Оценка<br></label>
+
+        <span><input type="email" id="email" placeholder="example@example.org"></span>
+        <span><label for="email"><br>E-mail<br></label></span>
+        <span><input type="tel" id="phone" required="required" placeholder="+71234567890"></span>
+        <span><label for="phone"><br>Номер телефона<br> </label></span>
+        <button type="submit" id="acc"><a>Отправить</a></button>
+        <p id="errorMessage">Неправильный формат номера телефона</p>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+<script src="form.js"></script>
+
+</body>
+</html>
