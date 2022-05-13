@@ -1,4 +1,4 @@
-from lab4.Complex import Complex
+from sem3.lab4.Complex import Complex
 import pickle
 import traceback
 from time import sleep
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         print("Файл для загрузки отсутствует")
         traceback.print_exc()
         try:
-            created = open('database.db','wb')
+            created = open('database.db', 'wb')
         except BaseException:
             traceback.print_exc()
     while flag:

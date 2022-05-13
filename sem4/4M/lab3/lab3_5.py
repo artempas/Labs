@@ -18,8 +18,8 @@ def update(val):
     points_plot.set_xdata(given_points_x)
     points_plot.set_ydata(given_points_y)
     fig.canvas.draw_idle()
-    ax.relim()
-    ax.autoscale_view()
+    #ax.relim()
+    #ax.autoscale_view()
 
 
 def chebyshev_nodes(a: Union[int, float], b: Union[int, float], n: int) -> tuple:

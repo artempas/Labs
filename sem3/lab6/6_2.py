@@ -21,8 +21,8 @@ def calculate_part(P: list, Q: list, R: list, i_from: int, i_to: int, N: int):
 
 if __name__ == '__main__':
 
-    print("Filling P,Q,R")
-    N = 5000
+    print("Filling P,Q,graph")
+    N = 100
     P: list[int] = [random.randint(0, 10 * N) for _ in range(N)]
     Q: list[int] = [random.randint(0, 10 * N) for _ in range(N)]
     R = []

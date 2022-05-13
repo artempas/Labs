@@ -7,7 +7,7 @@ from lab3_2 import lagrange
 
 
 def f(x: Union[int, float, np.ndarray]) -> float:
-    return 1 / (1 + 25 * x ** 2)
+    return 1 / (1 +25* x ** 2)
 
 
 def update(val):

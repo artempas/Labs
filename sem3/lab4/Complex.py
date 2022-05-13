@@ -1,4 +1,4 @@
-from lab4.Point import Point
+from Point import Point
 from math import atan
 
 
